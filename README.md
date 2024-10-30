@@ -15,11 +15,20 @@ The sample starts from the year 2013, when data are available for all the variab
 Run Cheng and Phillips cointegration test based on the information criterion. We analyze if we have cointegration and we define the deterministic term (without intercept, with restricted intercept or with unrestricted intercept).
 
 **3)** Johansen test
+
 Run Johansen test without intercept: Johansentest_withoutIntercept.fl
 Run Johansen test wit restricted intercept: Johansentest_withInterceptRestricted.fl
 Run Johansen test with unrestrictedt intercept: Johansentest_withInterceptUnrestricted.fl
 
+**4)** CointegratedVAR_explosiveroot.fl
 
+Run cointegrated VAR and obtain explosive root. Go to "Dynamics" and "Roots of Companion"
+
+**5)** Adjusting variables to obtain error-correction form
+
+Run AdjustingVariables.alg
+
+6)
 
 **References**
 

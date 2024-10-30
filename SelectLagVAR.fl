@@ -12,7 +12,7 @@ system
         bitcoin_5, bitcoin_6, google_1, google_2, google_3, google_4, google_5, google_6;
     U = Constant;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 
 // 5 Lags
@@ -26,7 +26,7 @@ system
         bitcoin_5, google_1, google_2, google_3, google_4, google_5;
     U = Constant;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 
 
@@ -41,7 +41,7 @@ system
         google_1, google_2, google_3, google_4;
     U = Constant;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 
 // 3 Lags
@@ -55,7 +55,7 @@ system
         google_1, google_2, google_3;
     U = Constant;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 
 // 2 Lags
@@ -69,7 +69,7 @@ system
         google_1, google_2;
     U = Constant;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 
 // 1 Lag
@@ -82,7 +82,7 @@ system
     Z = gold_1, google_1;
     U = Constant;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 // Without intercept
 // 6 Lags
@@ -95,7 +95,7 @@ system
     Z = bitcoin_1, bitcoin_2, bitcoin_3, bitcoin_4, 
         bitcoin_5, bitcoin_6, google_1, google_2, google_3, google_4, google_5, google_6;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 // 5 Lags
 module("PcGive");
@@ -107,7 +107,7 @@ system
     Z = bitcoin_1, bitcoin_2, bitcoin_3, bitcoin_4, 
         bitcoin_5, google_1, google_2, google_3, google_4, google_5;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 
 
@@ -121,7 +121,7 @@ system
     Z = bitcoin_1, bitcoin_2, bitcoin_3, bitcoin_4, 
         google_1, google_2, google_3, google_4;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 
 // 3 Lags
@@ -134,7 +134,7 @@ system
     Z = bitcoin_1, bitcoin_2, bitcoin_3,
         google_1, google_2, google_3;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 
 // 2 Lags
@@ -147,7 +147,7 @@ system
     Z = bitcoin_1, bitcoin_2,
         google_1, google_2;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 
 // 1 Lag
@@ -159,6 +159,6 @@ system
     Y = bitcoin, google;
     Z = bitcoin_1,google_1;
 }
-estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+estimate("OLS", 2013-11-15, 0, 2021-09-24, 0);
 
 progress;

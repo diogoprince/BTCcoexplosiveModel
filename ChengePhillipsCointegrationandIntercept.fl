@@ -1,0 +1,134 @@
+loaddata("dadosfinais.in7");
+
+// Cointegration test Cheng and Phillips
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2;
+    U = Constant;
+}
+estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+
+dynamics;
+
+// Unrestricted intercept
+// Rank equal to two
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2;
+    U = Constant;
+}
+rank(2);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);
+
+// Rank=1
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2;
+    U = Constant;
+}
+rank(1);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);
+
+// Rank= 0
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2;
+    U = Constant;
+}
+rank(0);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);
+
+
+// Restricted intercept
+// Rank=2
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2,Constant;
+}
+rank(2);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);
+
+// Rank=1
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2,Constant;
+}
+rank(1);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);
+
+// Rank=0
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2,Constant;
+}
+rank(0);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);
+
+
+// Without intercept
+// Rank=2
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2;
+}
+rank(2);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);
+
+// Rank=1
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2;
+}
+rank(1);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);
+
+// Rank=0
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2;
+}
+rank(0);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);
+
+
+progress;

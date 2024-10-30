@@ -1,0 +1,15 @@
+loaddata("dadosfinais.in7");
+
+// Batch code for SYS(24)
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = bitcoin, google;
+    Z = bitcoin_1, bitcoin_2,google_1, google_2;
+}
+estimate("OLS", 2013-11-08, 0, 2021-09-24, 0);
+test("I(1)");
+
+

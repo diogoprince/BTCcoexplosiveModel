@@ -3,6 +3,7 @@
 The aim of this paper is to estimate the determinants of Bitcoin price in the long term considering the gold price, S&P500, Google searches for Bitcoin, and the financial stress index. We use a co-explosive VAR model from Nielsen (2010) and Engsted and Nielsen (2012). Basically, we present the code focused on the main result of the paper which is the relationship between Bitcoin price and Google searches for Bitcoin. We have the following 7 codes below. We use Ox-metrics 9.06 software.
 
 **Data**
+
 The sample starts from the year 2013, when data are available for all the variables studied and the frequency is weekly. The sample period is from 10/04/2013 to 09/24/2021. We have 417 observations. Although there are Bitcoin transactions on Saturdays, we prefer to have the synchronization with the other series so we consider the Bitcoin price on Friday. We use the logarithm of Bitcoin price and Google Trends. 
 
 **Files:**

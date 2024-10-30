@@ -10,6 +10,16 @@ The sample starts from the year 2013, when data are available for all the variab
 
 **1)** SelectLagVAR.fl: We select the number of lags of the variables at level in the VAR model from 6 lags and if there is an intercept in the model. This batch presents the information criterion and the F test for reducing the number of lags in the VAR model.
 
+**2)** ChengePhillipsCointegrationandIntercept.fl
+
+Run Cheng and Phillips cointegration test based on the information criterion. We analyze if we have cointegration and we define the deterministic term (without intercept, with restricted intercept or with unrestricted intercept).
+
+**3)** Johansen test
+Run Johansen test without intercept: Johansentest_withoutIntercept.fl
+Run Johansen test wit restricted intercept: Johansentest_withInterceptRestricted.fl
+Run Johansen test with unrestrictedt intercept: Johansentest_withInterceptUnrestricted.fl
+
+
 
 **References**
 

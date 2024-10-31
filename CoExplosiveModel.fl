@@ -1,0 +1,13 @@
+loaddata("dadosfinais.in7");
+// Batch code for SYS( 3)
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = Drbitcoin, Drgoogle;
+    Z = Drbitcoin 1:2, Drgoogle 1:2, Constant;
+    U = Dbitcoin 1, Dgoogle 1;
+}
+rank(1);
+estimate("COINT", 2013-11-08, 0, 2021-09-24, 0);

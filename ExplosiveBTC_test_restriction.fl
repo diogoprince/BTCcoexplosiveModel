@@ -1,0 +1,51 @@
+// Batch code for SYS(15)
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = DDrbitcoin, DDrgoogle;
+    Z = DDrbitcoin 1:2, DDrgoogle 1:2, Drbitcoin 1, Drgoogle 1, 
+        Dbitcoin 1, Dgoogle 1;
+    U = Constant;
+}
+rank(2);
+constraints
+{
+&4=0;
+&5=0;
+&10=0;
+&11=0;
+&8=0;&9=0;
+&12=0;&13=0;
+&6=1;&14=1;
+}
+estimate("COINT", 2013-11-01, 0, 2021-09-24, 0);
+
+
+// Batch code for SYS(14)
+module("PcGive");
+package("PcGive", "Multiple-equation");
+usedata("dadosfinais.in7");
+system
+{
+    Y = DDrbitcoin, DDrgoogle;
+    Z = DDrbitcoin 1:2, DDrgoogle 1:2, Drbitcoin 1, Drgoogle 1, 
+        Dbitcoin 1, Dgoogle 1;
+    U = Constant;
+}
+rank(2);
+constraints
+{
+&4=0;
+&5=0;
+&10=0;
+&11=0;
+&8=0;&9=0;
+&12=0;&13=0;&15=0;
+&6=1;&14=1;
+}
+estimate("COINT", 2013-11-01, 0, 2021-09-24, 0);
+
+
+

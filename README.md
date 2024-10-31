@@ -6,7 +6,7 @@ The aim of this paper is to estimate the determinants of Bitcoin price in the lo
 
 The sample starts from the year 2013, when data are available for all the variables studied and the frequency is weekly. The sample period is from 10/04/2013 to 09/24/2021. We have 417 observations. Although there are Bitcoin transactions on Saturdays, we prefer to have the synchronization with the other series so we consider the Bitcoin price on Friday. We use the logarithm of Bitcoin price and Google Trends. 
 
-**Files:**
+**Files:** We use files in this sequence.
 
 **1)** SelectLagVAR.fl: We select the number of lags of the variables at level in the VAR model from 6 lags and if there is an intercept in the model. This batch presents the information criterion and the F test for reducing the number of lags in the VAR model.
 
@@ -28,7 +28,7 @@ Run cointegrated VAR and obtain explosive root. Go to "Dynamics" and "Roots of C
 
 Run AdjustingVariables.alg
 
-6)
+6) 
 
 **References**
 

@@ -28,7 +28,18 @@ Run cointegrated VAR and obtain explosive root. Go to "Dynamics" and "Roots of C
 
 Run AdjustingVariables.alg
 
-6) 
+**6)** CoExplosiveModel
+
+Estimate Co-explosive VAR model
+
+**7)** ExplosiveBTC_test_restriction
+
+Test the null hypothesis of a nonexplosive Bitcoin price. You can calculate LR test based on log-likelihood
+
+**8)** ExplosiveGoogle_test_restriction
+
+Test the null hypothesis of a nonexplosive Google searches. You can calculate LR test based on log-likelihood
+
 
 **References**
 
